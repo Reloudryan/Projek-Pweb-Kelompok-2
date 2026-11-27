@@ -20,12 +20,20 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('admin.users.index') }}">Kelola Pengguna</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('admin.daily-quotas.index') }}">Kuota Harian</a>
+                            </li>
                             {{-- Menu Admin lainnya (Destinasi, Kuota, Laporan) ditambahkan Anggota 2, 3, 4 di sini --}}
                         @else
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('home') }}">Destinasi Wisata</a>
                             </li>
-                            {{-- Menu Pesanan Saya ditambahkan Anggota 3 di sini --}}
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('bookings.create') }}">Pesan Tiket</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('bookings.index') }}">Pesanan Saya</a>
+                            </li>
                         @endif
                     @endauth
                 </ul>
