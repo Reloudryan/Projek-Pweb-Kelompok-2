@@ -27,5 +27,8 @@ class DatabaseSeeder extends Seeder
                 'role' => 'pengunjung',
             ]
         );
+
+        // Data contoh studi kasus Pantai Papuma (destinasi, kuota harian, pesanan)
+        $this->call(PapumaSeeder::class);
     }
 }
